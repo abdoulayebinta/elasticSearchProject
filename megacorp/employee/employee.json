@@ -1,0 +1,25 @@
+PUT /megacorp/employee/1
+{
+	"first_name" : "Abdoulaye",
+	"last_name":"Bah",
+	"age": 30,
+	"about":"I love to go rock climbing",
+	"interests":["sports","music"]
+},
+
+PUT /megacorp/employee/2
+{
+	"first_name" : "Lansana",
+	"last_name":"Sylla",
+	"age": 32,
+	"about":"I love to collect rock albums",
+	"interests":["music"]
+},
+PUT /megacorp/employee/3
+{
+	"first_name" : "Usman",
+	"last_name":"Jalloh",
+	"age": 35,
+	"about":"I love to build cabinets",
+	"interests":["forestry"]
+}
