@@ -26,3 +26,19 @@ GET /megacorp/employee/_search
 # Search for employees who have "Bah" in their last name
 # we will use a lightweight search method (query-string)
 GET /megacorp/employee/_search?q=last_name:Bah
+
+
+# Search with Query DSL (Domain Specific language)
+# DSL allows us to build much more complicated, robust queries
+# DSL is specified using a JSON request body. 
+# Note: We are no longer using query-string parameters
+# but instead a request body
+
+GET /megacorp/employee/_search
+{
+	"query" : {
+		"match" : {
+			"last_name" : "Bah"
+		}
+	}
+}
