@@ -15,3 +15,14 @@ GET /megacorp/employee/1  # the response contains some metadata
 GET /megacorp/employee/2
 
 GET /megacorp/employee/3
+
+
+# Search Lite - Simple search
+# Search for all employees, with this request
+# by default a search will return the top 10 results
+GET /megacorp/employee/_search
+
+
+# Search for employees who have "Bah" in their last name
+# we will use a lightweight search method (query-string)
+GET /megacorp/employee/_search?q=last_name:Bah
